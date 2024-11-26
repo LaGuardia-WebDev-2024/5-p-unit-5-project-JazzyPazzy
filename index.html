@@ -1,32 +1,204 @@
-<!-- Unit 5 Project
+<!--
 Requirements
-[  ] <div> and <span>
-[  ] height: and width:
-[  ] margin: and padding: 
-[  ] Three Images
+[ yes ] Two Different Headlines
+[yes  ] Bold and Italic Text
+[yes  ] One List
+[yes  ] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Flexbox
-[ no ] Feature 2 - Flip Card
-[ no ] Feature 3 - Navbar
-[ no ] Feature 4 - Shaking Animation
-[ no ] Feature 5 - Gradient Background
-[ no ] Feature 6 - Spotify Playlist
+[ no] Feature 1 - Include at least three emojis
+[ no ] Feature 2 - Include <font> tag
+[ yes  ] Feature 3 - Include Underline & Highlight
+[ no ] Feature 4 - Use Square Bullets
+[ no ] Feature 5 - Include a list within a list
 -->
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Unit 1-5 project</title>
 
-<head>
-  <title>Unit 5 Project</title>
-  <meta charset="utf-8">
-  <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Sofia&display=swap"
+      rel="stylesheet"
+    />
 
-  </style>
-</head>
-<body>
+    <style>
 
- 
+          body {
+            background-image: url(https://cdn.glitch.global/46898ef9-fe3a-4f3b-9e7d-5053079539eb/3e7e257b-5f70-4929-879f-d2e08809f3b4.image.jpeg?v=1731360914258);
+            background-size: cover;
+            background-repeat: repeat;
+            width: 100%;
+            margin: auto }
+      #title { background-color: white; }
+          #ani-heading {
+            background-color: rgb(191, 134, 230);}
+          #an-head-two {
+            background-color: rgb(191, 134, 230); }
+          .hobbie-paragraphs {
+            background-color: rgb(250, 243, 243); }
+          .categories {
+            background-color: rgb(230, 213, 242);
+            width: 200px;
+            height:29px; }
+          .animals { background-color: rgb(250, 243, 243); }
 
-</body>
+          img { border-radius: 30px; }
+          table,
+          th,
+          td {
+            border: 1px solid;}
+
+          h1 {
+            font-family: "Charm", cursive;
+            color: rgb(198, 136, 236);
+            font-size: 45px;  }
+          #first-word{color: gold}
+          #song-chart {background :rgb(226, 206, 240);
+            width:600px;
+            margin:auto
+      }
+      img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+</style>
+
+
+    <a href="#hob">Hobbies</a>
+    <a href="#fav">Favorite Things</a>
+    <center>
+      <h1>
+        ✨<u id="title"><span id="first-word">All </span>About Jazz</u>✨
+      </h1>
+    </center>
+    <h2 class="categories" id="hob">Hobbies:</h2>
+    <ul>
+      <li>
+        <em> <mark>Bike riding</mark></em>
+      </li>
+    </ul>
+    <p class="hobbie-paragraphs">
+      Since i was little i enjoyed being outside.<br />
+      affter learning how to ride my bike at the age of 6, <br />
+      i would <strong>always</strong> ask my mom to take me to the park <br />
+      or sit outside with me and let me practice!!
+    </p>
+    <ul>
+      <li>
+        <em><mark>Painting</mark></em>
+      </li>
+    </ul>
+    <p class="hobbie-paragraphs">
+      I am by <strong>no means</strong> an artist<br />
+      however i enjoy trying to follow along with a youtube video or looking at
+      an image for inspiration, <br />
+      and just let my creativity take over
+    </p>
+    <ul>
+      <li>
+        <em><mark>scrapbooking</mark></em>
+      </li>
+    </ul>
+    <p class="hobbie-paragraphs">
+      this hobby started with my love of stickers!<br />
+      since young i would collect stickers and put them all in a book. Then, as
+      i got older i started adding tapes and images from magazines or just
+      texured paper and have fun with it.
+    </p>
+    <h2 class="categories" id="fav">Favorite Things:</h2>
+    <ul>
+      <li id="ani-heading"><strong>Favorite Animals:</strong></li>
+    </ul>
+    <p class="animals">dogs...</p>
+    <a
+      href="https://www.nationalgeographic.com/animals/mammals/facts/domestic-dog"
+    >
+      see here for more
+    </a>
+
+    <img
+      src="https://cdn.glitch.global/bfbfdd80-d5a5-4a0e-9422-e21df7e85da5/28bf54b6-512d-478d-bdd6-136b50acfe8f.image.jpeg?v=1727194405997"
+      width="250"
+    />
+    <p class="animals">dolphins...</p>
+    <a href="https://www.nationalgeographic.com/animals/mammals/facts/dolphins"
+      >see here for more
+    </a>
+    <img
+      src="https://cdn.glitch.global/bfbfdd80-d5a5-4a0e-9422-e21df7e85da5/a811675c-3d5f-4232-9d4a-fcf68d7a9bc0.image.jpeg?v=1727194780068"
+      width="250"
+    />
+    <p class="animals">foxes...</p>
+    <a
+      href="https://www.nationalgeographic.com/related/724fe8d0-22e4-399b-81da-c56e5d247165/foxes"
+      >see here for more
+    </a>
+    <img
+      src="https://cdn.glitch.global/bfbfdd80-d5a5-4a0e-9422-e21df7e85da5/9378c4a9-9f56-4579-b03c-4630799ef921.image.jpeg?v=1727194941629"
+      width="250"
+    />
+
+    <ul>
+      <li id="an-head-two"><strong>Favorite Songs:</strong></li>
+    </ul>
+    <div id="song-chart">
+      <table>
+        <thead>
+          <tr>
+            <th>Song name</th>
+            <th>Artist</th>
+            <th>Favorite lyric</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dont fear the reaper</td>
+            <td>Blue oyster cult</td>
+            <td>
+              "seasons dont fear the reaper,nor do the wind,the sun or the sky"
+            </td>
+          </tr>
+          <tr>
+            <td>Static</td>
+            <td>Steve Lacy</td>
+            <td>
+              "cause im longing for something secure,if you had to stunt your
+              shining for your lover"
+            </td>
+          </tr>
+          <tr>
+            <td>So my darling</td>
+            <td>Rachel Chinouriri</td>
+            <td>
+              "and my heart beats stuck in a daze over our thoughts, and
+              watching me grow to be new "
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </body>
 </html>
